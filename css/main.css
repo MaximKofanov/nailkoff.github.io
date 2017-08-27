@@ -18,7 +18,6 @@ body {
 
 header {
   position: relative;
-  max-width: 1170px;
   min-height: 700px;
   overflow: hidden; }
   header .logo {
@@ -41,7 +40,7 @@ header {
     font-size: 25px; }
   header .img {
     position: absolute;
-    width: 1170px;
+    width: 100%;
     height: 700px;
     top: 0;
     z-index: -1;
@@ -70,12 +69,14 @@ section.contacts {
     opacity: 1; }
 
 section.sliders div {
-  width: 585px;
+  width: 50%;
   height: 380px;
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
 
 section.sliders h2 {
-  font-size: 30px; }
+  font-size: 30px;
+  margin: 0; }
 
 section.sliders div.textPrice {
   background-color: #FFEBFC;
@@ -86,7 +87,7 @@ section.sliders div.textPrice:nth-child(2) {
   color: #fff; }
 
 section.sliders #slider {
-  width: 585px;
+  width: 100%;
   height: 380px;
   overflow: hidden;
   position: relative; }
@@ -99,7 +100,7 @@ section.sliders #slider {
   section.sliders #slider #miniSlid ul {
     position: absolute;
     width: 100%;
-    height: 60px;
+    height: 50px;
     bottom: 0;
     right: 0;
     text-align: center;
@@ -124,26 +125,133 @@ section.sliders #slider {
       background-position: center; }
 
 section.sliders #arrowLeft {
-  width: 20px;
-  height: 50px;
-  background-color: red;
+  width: 0;
+  height: 0;
+  border: 23px solid transparent;
+  border-right-color: #C53543;
+  border-left: 0;
   z-index: 3;
   position: absolute;
-  bottom: 5px;
+  bottom: 2px;
   left: 10px;
   cursor: pointer;
   opacity: 0.5; }
 
 section.sliders #arrowRight {
-  width: 20px;
-  height: 50px;
-  background-color: red;
+  width: 0;
+  height: 0;
+  border: 23px solid transparent;
+  border-left-color: #C53543;
+  border-right: 0;
   z-index: 3;
   position: absolute;
-  bottom: 5px;
+  bottom: 2px;
   right: 10px;
   cursor: pointer;
   opacity: 0.5; }
 
 section.sliders #arrowLeft:hover, section.sliders #arrowRight:hover {
   opacity: 1; }
+
+section.sliders #sliderP {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  position: relative; }
+  section.sliders #sliderP #imgSlidP {
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-position: center; }
+  section.sliders #sliderP #miniSlidP ul {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap; }
+    section.sliders #sliderP #miniSlidP ul li {
+      width: 17%;
+      height: 100%;
+      list-style-type: none;
+      display: inline-block;
+      cursor: pointer;
+      z-index: 2;
+      position: relative;
+      overflow: hidden;
+      opacity: 0.6;
+      -webkit-transition: 1s;
+      -o-transition: 1s;
+      transition: 1s;
+      -webkit-background-size: cover;
+              background-size: cover;
+      background-position: center; }
+
+section.sliders #arrowLeftP {
+  width: 0;
+  height: 0;
+  border: 23px solid transparent;
+  border-right-color: #C53543;
+  border-left: 0;
+  z-index: 3;
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  cursor: pointer;
+  opacity: 0.5; }
+
+section.sliders #arrowRightP {
+  width: 0;
+  height: 0;
+  border: 23px solid transparent;
+  border-left-color: #C53543;
+  border-right: 0;
+  z-index: 3;
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  cursor: pointer;
+  opacity: 0.5; }
+
+section.sliders #arrowLeftP:hover, section.sliders #arrowRightP:hover {
+  opacity: 1; }
+
+section.price {
+  width: 100%;
+  height: 1156px;
+  background-image: url(../img/priceImg.png);
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative;
+  background-position: -10px 0;
+  background-repeat: no-repeat; }
+  section.price .linePrice {
+    background-color: #EBC0C6;
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    opacity: 0.5;
+    top: -10px;
+    z-index: -1; }
+  section.price h2 {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 40px;
+    color: #C53543;
+    font-family: Sandy Comic Strip; }
+  section.price ul {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 250px;
+    padding: 3px; }
+    section.price ul h3 {
+      color: #C53543;
+      font-size: 25px;
+      margin: 0;
+      padding: 10px 0; }
+    section.price ul li {
+      font-size: 20px; }

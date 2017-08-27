@@ -13,12 +13,12 @@
 <body>
 
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row no-gutter">
 			<header>
 				<div class="img"></div>
 				<div class="col-md-6">
-					<img src="img/insta.png" alt="instagramm" class="headIcon">
+					<noindex><a href="https://www.instagram.com/lesyakoff_nail/" class="insta" target="_blank"><img src="img/insta.png" alt="instagramm" class="headIcon"></a></noindex>	
 				</div>
 				<div class="col-md-6">
 					<i class="fa fa-bars headIcon mnuHead" aria-hidden="true"></i>
@@ -30,7 +30,7 @@
 			</header>
 		</div>
 		<!-- contacts -->
-		<div class="row no-gutter contacts">
+		<div class="row no-gutter">
 			<section class="contacts">
 				<div class="col-sm-4"><i class="fa fa-map-marker" aria-hidden="true"></i><p> м.Марьино ул.Поречная 3к1</p></div>
 				<div class="col-sm-4"><i class="fa fa-mobile" aria-hidden="true"></i><p>+7 (915) 142-29-69 | 10:00 - 21:00 </p></div>
@@ -57,10 +57,58 @@
 		</div>
 		<div class="row no-gutter">
 			<section class="sliders">
-				<div class="col-md-6"></div>
+				<div class="col-md-6">
+					<div id="sliderP">
+						<div id="imgSlidP"></div>
+						<div id="miniSlidP">
+							<ul></ul>
+						</div>
+						<div id="arrowLeftP"></div>
+						<div id="arrowRightP"></div>
+					</div>
+				</div>
 				<div class="col-md-6 textPrice">
 					<h2>Педикюр</h2>
 				</div>
+			</section>
+		</div>
+		<div class="row no-gutter">
+			<section class="price">
+				<div class="linePrice"></div>
+				<h2>Прайс лист</h2>
+				<ul>
+					<h3>Маникюр, педикюр:</h3>
+					<li>Комбинированный маникюр (аппарат + ножницы) – 400 р</li>
+					<li>Маникюр + однотонное покрытие гель-лаком – 800 р</li>
+					<li>Маникюр + френч/лунки – 900 р</li>
+					<li>Укрепление акриловой пудрой – 100 р</li>
+					<li>Ремонт ногтя – 50 р</li>
+					<li>Педикюр экспресс (ноготки) – 700 р</li>
+					<li>Педикюр + однотонное покрытие гель-лаком – 1100 р</li>
+					<h3>Дизайн:</h3>
+					<li>Стразы – от 50 до 300 р</li>
+					<li>Вензеля, блестки, слайдер, втирка и т.д. – 50 р (1 ноготь)</li>
+					<li>Рисунок – 100 р (1 ноготь)</li>
+					<h3>Снятие:</h3>
+					<li>Снятие моего материала с последующим покрытием – бесплатно</li>
+					<li>Снятие моего материла без покрытия – 200 р</li>
+					<li>Снятие чужого материала 200 р</li>						
+				</ul>
+			</section>
+		</div>
+		<div class="row no-gutter">
+			<section class="formMail">
+				<form class="forms">
+					<label class="formGroup">
+						<span>Ваш Телефон:</span>
+						<input type="phone" name="phone" placeholder="Ваш телефон" data-validation-required-message="Не корректно введен телефон" required />
+					</label>
+					<label class="formGroup">
+						<span>Ваше Имя:</span>
+						<input name="name" placeholder="Ваше имя" data-validation-required-message="Вы не ввели имя" required></input>
+					</label>
+					<button>Отправить</button>
+				</form>	
 			</section>
 		</div>
 	</div>
